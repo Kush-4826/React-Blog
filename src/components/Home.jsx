@@ -42,19 +42,26 @@ const Home = () => {
 
   return (
     <div className="container">
-      <h1 className="header">Blog App</h1>
-      <div className="button-container">
-        <button className="button" onClick={sortByMostCommented}>Sort by Most Commented</button>
-        <button className="button" onClick={sortByMostLiked}>Sort by Most Liked</button>
+      <div className="header">
+        <h1 className="header-text">Blog It</h1>
+        <div className="button-container">
+          <button className="button" onClick={sortByMostCommented}>Sort by Most Commented</button>
+          <button className="button" onClick={sortByMostLiked}>Sort by Most Liked</button>
+        </div>
       </div>
-      <div>
+      <div className='blog-container row'>
         {currentBlogs.map(blog => (
-          <div className="blog" key={blog.id}>
-            <h2>{blog.title}</h2>
-            <p>{blog.author}</p>
-            <p>{blog.date}</p>
-            <p>{blog.content}</p>
-            <Link to={`/blog/${blog.id}`}>Read more</Link>
+          <div className="blog col-4" key={blog.id}>
+            <div className='image-container'>
+              <img src={ blog.image } alt="" className='image-responsive'/>
+            </div>
+            <div className='details-container'>
+              <h2>{blog.title}</h2>
+              <p>{blog.author}</p>
+              <p>{blog.date}</p>
+              {/* <p>{blog.content}</p> */}
+              <Link to={`/blog/${blog.id}`} className='button-link'>Read more</Link>
+            </div>
           </div>
         ))}
       </div>
