@@ -12,21 +12,26 @@ const Blog = () => {
   if (!blog) return <div className="container">Blog not found</div>;
 
   return (
-    <div className="container">
+    <div className="container" id='blog-page'>
       <div className="blog">
+        <div className="image-container">
+          <img src={"../" + blog.image} alt="" className='image-responsive'/>
+        </div>
         <h2>{blog.title}</h2>
         <p>{blog.author}</p>
         <p>{blog.date}</p>
         <p>{blog.content}</p>
+        <h3>Likes:</h3>
+        <p>{ blog.likes }</p>
         <h3>Comments:</h3>
-        <ul>
+        <ul className='comments-section'>
           {blog.comments.map(comment => (
-            <li key={comment.id}>
-              <strong>{comment.author}:</strong> {comment.content}
+            <li key={comment.id} className='comment'>
+              <p><strong>{comment.author}</strong></p><p>{comment.content}</p>
             </li>
           ))}
         </ul>
-        <Link to={`/author/${blog.authorId}`}>View Author Profile</Link>
+        <Link to={`/author/${blog.authorId}`} className='button-link'>View Author Profile</Link>
       </div>
     </div>
   );
