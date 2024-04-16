@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import blogsData from '../data/blogs.json';
 import '../App.css';
 
-const PAGE_SIZE = 3;
+const PAGE_SIZE = 2;
 
 const Home = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -65,11 +65,17 @@ const Home = () => {
         ))}
       </div>
       <div className="pagination">
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
-          <button key={page} onClick={() => handlePageChange(page)}>
-            {page}
-          </button>
-        ))}
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => {
+          let paginationStyle = "pagination-button";
+          if (currentPage == page) {
+            paginationStyle += " active";
+          }
+          return (
+            <button className={paginationStyle} key={page} onClick={() => handlePageChange(page)}>
+              {page}
+            </button>
+          )
+        })}
       </div>
     </div>
   );

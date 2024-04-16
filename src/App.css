@@ -148,3 +148,26 @@ body {
 .blog.profile h2 {
   margin-top: 1rem;
 }
+
+.pagination-button {
+  background-color: #fff;
+  padding: .5rem .7rem;
+  border-radius: 50%;
+  border: 1px solid #0056b3;
+  font-family: monospace;
+  margin: 0 .25rem;
+}
+
+.pagination-button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination-button:hover {
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
