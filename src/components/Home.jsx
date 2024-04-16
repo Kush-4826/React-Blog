@@ -56,10 +56,9 @@ const Home = () => {
               <img src={ blog.image } alt="" className='image-responsive'/>
             </div>
             <div className='details-container'>
-              <h2>{blog.title}</h2>
-              <p>{blog.author}</p>
-              <p>{blog.date}</p>
-              {/* <p>{blog.content}</p> */}
+              <h2 style={{marginBottom: ".3rem"}}>{blog.title}</h2>
+              <p style={{ margin: ".5rem 0" }}>{blog.author} • {blog.date}</p>
+              <p style={{ margin: "1rem 0" }}><strong>Likes: </strong>{blog.likes} • <strong>Comments: </strong>{ blog.comments.length}</p>
               <Link to={`/blog/${blog.id}`} className='button-link'>Read more</Link>
             </div>
           </div>

@@ -20,7 +20,7 @@ const Blog = () => {
         <h2>{blog.title}</h2>
         <p>{blog.author}</p>
         <p>{blog.date}</p>
-        <p>{blog.content}</p>
+        <p style={{textAlign: "justify"}}>{blog.content}</p>
         <h3>Likes:</h3>
         <p>{ blog.likes }</p>
         <h3>Comments:</h3>
