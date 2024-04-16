@@ -128,3 +128,23 @@ body {
 #blog-page .button-link {
   margin-top: 2rem;
 }
+
+.blog.profile .user-img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.blog.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog.profile p {
+  text-align: justify;
+}
+
+.blog.profile h2 {
+  margin-top: 1rem;
+}
