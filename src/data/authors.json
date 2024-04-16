@@ -2,14 +2,43 @@
   {
     "id": 1,
     "name": "John Doe",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "email": "john@example.com"
+    "bio": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, aliquid expedita voluptates harum voluptatem deleniti numquam ipsam perferendis libero nulla iure quasi voluptate nihil quis alias beatae! Quod doloremque obcaecati amet voluptatibus deserunt, pariatur maxime repellendus! Expedita explicabo sed reiciendis dolorem cumque nesciunt obcaecati perferendis molestiae, inventore id, et numquam.",
+    "email": "john@example.com",
+    "image": "authors-img/photo-1.jpg"
   },
   {
     "id": 2,
     "name": "Jane Smith",
-    "bio": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "email": "jane@example.com"
+    "bio": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, aliquid expedita voluptates harum voluptatem deleniti numquam ipsam perferendis libero nulla iure quasi voluptate nihil quis alias beatae! Quod doloremque obcaecati amet voluptatibus deserunt, pariatur maxime repellendus! Expedita explicabo sed reiciendis dolorem cumque nesciunt obcaecati perferendis molestiae, inventore id, et numquam.",
+    "email": "jane@example.com",
+    "image": "authors-img/photo-2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "bio": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, aliquid expedita voluptates harum voluptatem deleniti numquam ipsam perferendis libero nulla iure quasi voluptate nihil quis alias beatae! Quod doloremque obcaecati amet voluptatibus deserunt, pariatur maxime repellendus! Expedita explicabo sed reiciendis dolorem cumque nesciunt obcaecati perferendis molestiae, inventore id, et numquam.",
+    "email": "alice@example.com",
+    "image": "authors-img/photo-3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "David Brown",
+    "bio": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, aliquid expedita voluptates harum voluptatem deleniti numquam ipsam perferendis libero nulla iure quasi voluptate nihil quis alias beatae! Quod doloremque obcaecati amet voluptatibus deserunt, pariatur maxime repellendus! Expedita explicabo sed reiciendis dolorem cumque nesciunt obcaecati perferendis molestiae, inventore id, et numquam.",
+    "email": "david@example.com",
+    "image": "authors-img/photo-4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Emily Green",
+    "bio": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, aliquid expedita voluptates harum voluptatem deleniti numquam ipsam perferendis libero nulla iure quasi voluptate nihil quis alias beatae! Quod doloremque obcaecati amet voluptatibus deserunt, pariatur maxime repellendus! Expedita explicabo sed reiciendis dolorem cumque nesciunt obcaecati perferendis molestiae, inventore id, et numquam.",
+    "email": "emily@example.com",
+    "image": "authors-img/photo-5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "John Doe",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "email": "john@example.com"
   }
 ]
 
