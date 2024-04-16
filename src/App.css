@@ -8,12 +8,18 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 20px auto;
   padding: 0 20px;
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text {
   text-align: center;
   margin-bottom: 40px;
 }
@@ -49,6 +55,10 @@ body {
   cursor: pointer;
 }
 
+.button:last-child {
+  margin-left: 2rem;
+}
+
 .button:hover {
   background-color: #0056b3;
 }
@@ -60,4 +70,61 @@ body {
 
 .link:hover {
   text-decoration: underline;
+}
+
+.col-4 {
+  display: flex;
+  align-items: center;
+}
+
+.blog-container .image-container {
+  width: 40%;
+}
+
+.blog-container .details-container {
+  margin-left: 1.5rem;
+}
+
+.image-responsive {
+  width: 100%;
+}
+
+.button-link {
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  padding: .5rem 1rem;
+  margin-top: rem;
+  border-radius: 8px;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+
+#blog-page img {
+  margin-bottom: 1.5rem;
+}
+
+#blog-page .comments-section {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+#blog-page .comments-section .comment {
+  padding: .6rem;
+  background-color: #eee;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+#blog-page .comments-section .comment p {
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+#blog-page .button-link {
+  margin-top: 2rem;
 }
